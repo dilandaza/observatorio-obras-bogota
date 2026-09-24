@@ -437,7 +437,7 @@
                 </div>`;
             
             // Llama a tu API en Python
-            fetch(`https://observatorio-obras-bogota.onrender.com/${encodeURIComponent(nombreLocalidad)}`)
+            fetch(`https://observatorio-obras-bogota.onrender.com/api/obras/${encodeURIComponent(nombreLocalidad)}`)
                 .then(response => response.json())
                 .then(datos => {
                     contenedor.innerHTML = ''; // Limpiamos el mensaje de carga
